@@ -28,9 +28,9 @@ python bot.py
 
 5️⃣ Alternatively, use setup.sh or setup.bat
 - For Linux/macOS:  
-bash setup.sh
+  bash setup.sh  
 - For Windows:  
-setup.bat
+  setup.bat  
 ```
 ⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**
 - *hello – Greet the AI.
