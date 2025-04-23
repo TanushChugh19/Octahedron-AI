@@ -1,0 +1,4 @@
+discord.py
+ollama
+requests
+python-dotenv
