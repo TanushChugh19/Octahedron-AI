@@ -1,0 +1,16 @@
+# Ignore environment files storing API keys and secrets
+.env
+*.env
+
+# Ignore compiled files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment dependencies
+venv/
+.env/
+*.log
+
+# Ignore system-generated files
+.DS_Store
+Thumbs.db
