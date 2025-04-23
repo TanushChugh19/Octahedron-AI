@@ -25,6 +25,9 @@ API_KEY=your_ai_model_api_key_here
 
 4️⃣ Run the Bot
 python bot.py
+
+5️⃣ Or use setup.sh file
+bash setup.sh
 ```
 ⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**
 - *hello – Greet the AI.
