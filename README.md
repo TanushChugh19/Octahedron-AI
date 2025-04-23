@@ -43,8 +43,7 @@ We welcome contributions! Follow these steps:**
 - Make changes, test them, and commit updates.
 - Submit a pull request explaining your improvements.
 
-**📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. License
-This project is licensed under MPL-2.0, meaning:**
+**📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. This project is licensed under MPL-2.0, meaning:**  
 - You must credit the original author.
 - You can modify and share the code, but all modified files must stay under MPL-2.0.
 - You can’t relicense the project as proprietary.
