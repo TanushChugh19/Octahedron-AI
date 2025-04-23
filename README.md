@@ -61,4 +61,4 @@ Reach out via:
 📧 Email: [tanush.chugh@hotmail.com](mailto:tanush.chugh@hotmail.com)  
 🌍 Website: Coming Soon!  
 📡 Discord Community: Coming Soon!  
-Octahedron is just a prompt away! 🔥✨  
+**Octahedron** is just a prompt away! 🔥✨  
