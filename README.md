@@ -26,8 +26,10 @@ API_KEY=your_ai_model_api_key_here
 4️⃣ Run the Bot
 python bot.py
 
-5️⃣ Or use setup.sh file on Linux and macOS, use setup.bat on Windows  
-bash setup.sh  
+5️⃣ Alternatively, use setup.sh or setup.bat
+- For Linux/macOS:  
+bash setup.sh
+- For Windows:  
 setup.bat
 ```
 ⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**
