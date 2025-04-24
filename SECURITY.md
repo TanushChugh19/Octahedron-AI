@@ -47,7 +47,7 @@ To scan for known vulnerabilities and outdated packages.
 
 ---
 
-## 🧪 Coming Soon: Security Enhancements
+## 🧪 Security Enhancements
 
 We are working on integrating:
 - ✅ Automated dependency vulnerability scans
