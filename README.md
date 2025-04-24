@@ -34,7 +34,8 @@ python bot.py
 ```
 🗒️ **Note:**  
 - You may need to adjust the PyTorch version inside the `requirements.txt` file based on your CUDA version (default is CUDA 11.8).  
-⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**
+
+⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**  
 - *hello – Greet the AI.
 - *oct <message> – Chat with Octahedron AI.
 
