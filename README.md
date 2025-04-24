@@ -1,6 +1,6 @@
 # 🚀 Octahedron AI – Your AI Memory Keeper! 🧠✨  
 
-Octahedron AI remembers, so you don’t have to! With **smart recall**, **deep insights**, and **effortless conversation**, it keeps knowledge at your fingertips. Whether you're brainstorming, researching, or solving problems—Octahedron AI is your ultimate AI companion! 🤖💡  
+Octahedron AI (by Octahedron Tech) remembers, so you don’t have to! With **smart recall**, **deep insights**, and **effortless conversation**, it keeps knowledge at your fingertips. Whether you're brainstorming, researching, or solving problems—Octahedron AI is your ultimate AI companion! 🤖💡  
 
 ## 🔥 Features  
 ✅ **Smart Recall** – Context-aware responses with memory for past interactions.  
