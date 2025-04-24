@@ -1,4 +1,4 @@
-# 🔐 Security Policy – Octahedron AI
+# 🔐 Security Policy – Octahedron AI by Octahedron Tech
 
 We take security seriously at **Octahedron Tech** and strive to protect user data, APIs, and the platform itself from vulnerabilities or misuse.
 
