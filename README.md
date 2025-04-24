@@ -30,7 +30,8 @@ python bot.py
 - For Linux/macOS:  
   bash setup.sh  
 - For Windows:  
-  setup.bat  
+  setup.bat
+- You may want to change pytorch version in requirements.txt for your cuda version, default is cuda 11.8  
 ```
 ⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**
 - *hello – Greet the AI.
