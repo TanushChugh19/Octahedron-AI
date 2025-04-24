@@ -50,6 +50,11 @@ We welcome contributions! Follow these steps:**
 - Make changes, test them, and commit updates.
 - Submit a pull request explaining your improvements.
 
+**🐛 Known Bugs/Flaws (Status-Patched -> ✅)**  
+- Description command not accurate but working ❌  
+- Generationg of image and web search command don't exist ❌
+- Using pseudo random python library for random integers and non cryptographic keys ❌  
+
 **📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. This project is licensed under MPL-2.0, meaning:**  
 - You must credit the original author.
 - You can modify and share the code, but all modified files must stay under MPL-2.0.
