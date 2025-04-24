@@ -6,8 +6,12 @@ Octahedron AI (by Octahedron Tech) remembers, so you don’t have to! With **sma
 ✅ **Smart Recall** – Context-aware responses with memory for past interactions.  
 ✅ **Deep Insights** – AI-driven knowledge, research support, and brainstorming assistance.  
 ✅ **Effortless Conversations** – Fluid discussions without losing track of important information.  
-✅ **Image Descriptions** – Seamless descriptions of uploaded images.  
+✅ **Coding** – Advanced coding in Java, C#, C, C++, Python and JavaScript. (1983 character limit, increasing soon)  
+✅ **Time Keeping** – Tells the local time and time from vairous time-zones.  
 ✅ **Secure & Customizable** – Keep private data safe and tailor responses to fit your needs.  
+❌ **Image Descriptions** – Seamless descriptions of uploaded images. (Inaccurate and under development)  
+❌ **Image Generation** – Generate AI images and art with great precission. (Under development)  
+❌ **Web Search** – Why stop at December 2023 training data when you can search the web for latest responses. (Under development)  
 
 ## 🛠 Installation & Setup  
 ```bash
