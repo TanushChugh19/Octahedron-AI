@@ -401,7 +401,7 @@ async def show_keys(ctx):
             )
             try:
                 dm_channel = await ctx.author.create_dm()
-                ctx.reply("DM sent!")
+                await ctx.reply("DM sent!")
                 await dm_channel.send(f"Here are your activation keys:\n\n{keys_str}")
             except discord.errors.Forbidden:
                 await ctx.reply("I can't send you a DM. Please check your DM settings.")
