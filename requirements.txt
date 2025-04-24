@@ -2,4 +2,6 @@ discord.py==2.5.2
 ollama==0.4.8
 requests==2.32.3
 python-dotenv==1.1.0
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+torch==2.6.0
+torchvision==0.21.0
+torchaudio==2.6.0
