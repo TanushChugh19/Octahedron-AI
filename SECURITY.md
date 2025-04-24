@@ -41,7 +41,7 @@ We rely on trusted libraries, including:
 
 We recommend using tools like:
 - [`pip-audit`](https://pypi.org/project/pip-audit/)
-- [GitHub Dependabot](https://github.com/dependabot)
+- [`GitHub Dependabot`](https://github.com/dependabot)
 
 To scan for known vulnerabilities and outdated packages.
 
