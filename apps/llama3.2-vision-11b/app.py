@@ -111,7 +111,7 @@ if __name__ == "__main__":
 
     def getTimeOfAnyCity(city):
         url = f"http://api.timezonedb.com/v2.1/get-time-zone?key={os.getenv("API_KEY")}&format=json&by=zone&zone={city}"
-        response = r.get(url).json()
+        response = r.get(url, timeout=8).json()
 
         if response.get("status") != "OK":
             return f"Error: Couldn't retrieve time for {city}. Check API response."
