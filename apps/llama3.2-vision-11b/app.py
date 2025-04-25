@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 if __name__ == "__main__":
     load_dotenv()
 
-    ALLOWED_USER = 924697503356583967
+    ALLOWED_USER = 0 #  Put your discord user id here 😊
 
     intents = discord.Intents.default()
     intents.message_content = True
