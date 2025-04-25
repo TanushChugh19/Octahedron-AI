@@ -54,7 +54,8 @@ We welcome contributions! Follow these steps:**
 - Description command not accurate but working ❌  
 - Generationg of image and web search command don't exist ❌
 - Using ```random``` module for non-cryptographic keys (not secure) ❌
-- No database implemented yet ❌  
+- No database implemented yet ❌
+- v0.0-alpha.1 has vulnerability, keeps waiting for slow and unresponsive api when using `zones` command ✅ (Fixed, download app.py from source code rather than releases)
 
 **📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. This project is licensed under MPL-2.0, meaning:**  
 - You must credit the original author.
