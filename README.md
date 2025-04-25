@@ -2,6 +2,25 @@
 
 Octahedron AI (by Octahedron Tech) remembers, so you don’t have to! With **smart recall**, **deep insights**, and **effortless conversation**, it keeps knowledge at your fingertips. Whether you're brainstorming, researching, or solving problems — Octahedron AI is your ultimate AI companion! 🤖💡  
 
+## 😎 Octahedron AI is primarily open-source but includes certain parts that may remain closed-source due to security, financial, or proprietary reasons. Here’s a breakdown ⛓️‍💥  
+
+### Open-Source Components  
+- The core AI functions, commands, and integration with models like LLaMA 3.2, BLIP-2, and OpenJourney. (Other models coming soon, for now LLaMA 3.2 is the only one)  
+- Most of the interaction logic for Discord commands.  
+- Front-end components like the web interface and public utilities. (Coming soon)  
+
+### Closed-Source Components (coming soon)  
+- Payment Algorithms: The financial logic behind user subscriptions and payments will remain closed-source for security and business reasons. (Implementing soon)  
+- Key Generation: The algorithm and related functions for generating activation keys will be closed-source to maintain the security of the system. (Implementing soon)  
+- Database Handling: Parts of the database management system, especially those related to sensitive data, may be closed-source as they evolve. (Implementing soon)  
+
+### License  
+- This project is open-source under the MPL-2.0 license, except for the closed-source components which are proprietary and not open to modification or distribution.  
+
+### Contributing  
+- Contributions to open-source portions of the project are welcome! Please fork the repository, make your changes, and submit a pull request.  
+- If you're interested in working on or integrating with the closed-source components, please [contact](mailto:tanush.chugh@hotmail.com) us for collaboration opportunities.  
+
 ## 🔥 Features  
 ✅ **Smart Recall** – Context-aware responses with memory for past interactions.  
 ✅ **Deep Insights** – AI-driven knowledge, research support, and brainstorming assistance.  
