@@ -32,7 +32,7 @@ API_KEY=your_ai_model_api_key_here
 5️⃣ Run the Bot
 python bot.py
 
-6️⃣ Alternatively, use setup.sh or setup.bat
+6️⃣ Alternatively, use setup.sh or setup.bat and perform step 3 and 4
 - For Linux/macOS:  
   bash setup.sh  
 - For Windows:  
