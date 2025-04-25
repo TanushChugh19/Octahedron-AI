@@ -40,7 +40,8 @@ python bot.py
   setup.bat
 ```
 🗒️ **Note:**  
-- You may need to adjust the PyTorch version inside the `requirements.txt` file based on your CUDA version (default is CUDA 12.8).  
+- You may need to adjust the PyTorch version inside the `requirements.txt` file based on your CUDA version (default is CUDA 12.8).
+- Octahedron AI is mostly open-source but some parts like payment algorithms, key generation and database related files may become closed-source as time passes.
 
 ⚙️ **Usage Once running, Octahedron AI responds to Discord commands:**  
 - *hello – Greet the AI.
