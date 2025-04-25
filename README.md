@@ -25,7 +25,7 @@ pip install -r requirements.txt
 3️⃣ Set Up Environment Variables
 Create a .env file to store API keys and tokens:
 TOKEN=your_discord_bot_token_here
-API_KEY=your_ai_model_api_key_here
+API_KEY=your_timezonedb_api_key_here [timezonedb](https://timezonedb.com/)
 
 4️⃣ Replace ALLOWED_USER = 0 in app.py with your discord user id.
 
