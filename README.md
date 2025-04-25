@@ -23,7 +23,7 @@ cd Octahedron-AI
 pip install -r requirements.txt
 
 3️⃣ Set Up Environment Variables
-Create a .env file to store API keys and tokens:
+Create a .env file to store API keys and tokens (keep the file in the same directory as app.py file):
 TOKEN=your_discord_bot_token_here
 API_KEY=your_timezonedb_api_key_here
 - link for api: (https://timezonedb.com/)
