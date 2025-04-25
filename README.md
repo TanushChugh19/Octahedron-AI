@@ -14,7 +14,7 @@ Octahedron AI (by Octahedron Tech) remembers, so you don’t have to! With **sma
 ❌ **Web Search** – Why stop at December 2023 training data when you can search the web for latest responses. (Under development)  
 
 ## 🛠 Installation & Setup  
-```bash
+```
 1️⃣ Clone the Repository  
 git clone https://github.com/TanushChugh19/Octahedron-AI.git
 cd Octahedron-AI
@@ -53,9 +53,9 @@ We welcome contributions! Follow these steps:**
 **🐛 Known Bugs/Flaws (Status — Patched: ✅ | Pending Fix: ❌)**  
 - ❌ `describe` command is functional but provides inaccurate image descriptions  
 - ❌ `imagegen` and `rag` commands are not implemented yet  
-- ✅ Uses Python's `random` module for key generation — not cryptographically secure (Patched) | Fix: Using `secrets` module — please download the latest app.py from source, not from releases.  
+- ✅ Uses Python's `random` module for key generation — not cryptographically secure (Patched) | Fix: Using `secrets` module — please download the latest ```app.py``` from source, not from releases.  
 - ❌ No database backend implemented — currently using in-memory or file-based storage  
-- ✅ In v0.0-alpha.1, `zones` command caused the bot to hang on slow/unresponsive APIs (Patched) | Fix: Added timeout to API requests — please download the latest app.py from source, not from releases.  
+- ✅ In v0.0-alpha.1, `zones` command caused the bot to hang on slow/unresponsive APIs (Patched) | Fix: Added timeout to API requests — please download the latest ```app.py``` from source, not from releases.  
 
 **📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. This project is licensed under MPL-2.0, meaning:**  
 - You must credit the original author.
