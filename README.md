@@ -27,10 +27,12 @@ Create a .env file to store API keys and tokens:
 TOKEN=your_discord_bot_token_here
 API_KEY=your_ai_model_api_key_here
 
-4️⃣ Run the Bot
+4️⃣ Replace ALLOWED_USER = 0 in app.py with your discord user id.
+
+5️⃣ Run the Bot
 python bot.py
 
-5️⃣ Alternatively, use setup.sh or setup.bat
+6️⃣ Alternatively, use setup.sh or setup.bat
 - For Linux/macOS:  
   bash setup.sh  
 - For Windows:  
