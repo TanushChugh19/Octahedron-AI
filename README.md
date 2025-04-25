@@ -50,12 +50,12 @@ We welcome contributions! Follow these steps:**
 - Make changes, test them, and commit updates.
 - Submit a pull request explaining your improvements.
 
-**🐛 Known Bugs/Flaws (Status-Patched -> ✅ | These will be patched soon)**  
-- Description command not accurate but working ❌  
-- Generationg of image and web search command don't exist ❌
-- Using ```random``` module for non-cryptographic keys (not secure) ❌
-- No database implemented yet ❌
-- v0.0-alpha.1 has vulnerability, keeps waiting for slow and unresponsive api when using `zones` command ✅ (Fixed, download app.py from source code rather than releases)
+**🐛 Known Bugs/Flaws (Status — Patched: ✅ | Pending Fix: ❌)**  
+- ❌ describe command is functional but provides inaccurate image descriptions  
+- ❌ generate and web commands are not implemented yet  
+- ❌ Uses Python's random module for key generation — not cryptographically secure  
+- ❌ No database backend implemented — currently using in-memory or file-based storage  
+- ✅ In v0.0-alpha.1, zones command caused the bot to hang on slow/unresponsive APIs (Patched) | Fix: Added timeout to API requests — please download the latest app.py from source, not from releases.  
 
 **📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. This project is licensed under MPL-2.0, meaning:**  
 - You must credit the original author.
