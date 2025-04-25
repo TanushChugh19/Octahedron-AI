@@ -2,6 +2,7 @@
 # This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 # If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+import asyncio
 import difflib as df
 import os
 import secrets
@@ -16,10 +17,19 @@ import torch
 from discord.ext import commands
 from dotenv import load_dotenv
 
+if not load_dotenv():
+    if os.getenv("API_KEY") is None:
+        print("Missing API_KEY in environment variables. Exiting...")
+        exit(1)
+if not load_dotenv():
+    if os.getenv("TOKEN") is None:
+        print("Missing TOKEN in environment variables. Exiting...")
+        exit(1)
+
 if __name__ == "__main__":
     load_dotenv()
 
-    ALLOWED_USER = 0 #  Put your discord user id here 😊
+    ALLOWED_USER = 924697503356583967
 
     intents = discord.Intents.default()
     intents.message_content = True
@@ -110,7 +120,7 @@ if __name__ == "__main__":
             )
 
     def getTimeOfAnyCity(city):
-        url = f"http://api.timezonedb.com/v2.1/get-time-zone?key={os.getenv("API_KEY")}&format=json&by=zone&zone={city}"
+        url = f"http://api.timezonedb.com/v2.1/get-time-zone?key={os.getenv('API_KEY')}&format=json&by=zone&zone={city}"
         response = r.get(url, timeout=8).json()
 
         if response.get("status") != "OK":
@@ -127,8 +137,8 @@ if __name__ == "__main__":
 
     def generate_key() -> str:
         chars = string.ascii_uppercase + string.digits
-        key_parts = []
-        for _ in range(4):
+        key_parts = ["OT"]
+        for _ in range(5):
             part = "".join(secrets.choice(chars) for _ in range(5))
             key_parts.append(part)
         key = "-".join(key_parts)
@@ -138,8 +148,8 @@ if __name__ == "__main__":
         while True:
             new_key = generate_key()
             if new_key not in activation_keys:
-                activation_keys[new_key] = False
-                return new_key
+                activation_keys[f"||{new_key}||"] = False
+                return f"||{new_key}||"
 
     def create_multiple_unique_keys(num: int = 10) -> list:
         new_keys = []
@@ -283,6 +293,55 @@ if __name__ == "__main__":
                         "paid-feature",
                         "art-generation",
                     ],
+                    "*bye": [
+                        "kill",
+                        "kill-terminal",
+                        "killterminal",
+                        "off",
+                        "turn-off",
+                        "turnoff",
+                        "close",
+                        "goodbye",
+                    ],
+                    "*showkeys": [
+                        "show-keys",
+                        "showkeys",
+                        "keys",
+                        "key",
+                        "premium-keys",
+                        "premiumkey",
+                        "premium-keys-list",
+                    ],
+                    "*securekeys": [
+                        "secure-keys",
+                        "securitykeys",
+                        "keys-secure",
+                        "secure",
+                        "cryptographic",
+                        "cryptographically-secure",
+                        "cryptographically-secure-key",
+                        "cryptographically-secure-keys",
+                        "cryptographic-key",
+                        "cryptographic-keys",
+                    ],
+                    "*activate": [
+                        "activate",
+                        "premium",
+                        "key",
+                        "subscription",
+                        "activate-key",
+                        "premium-key",
+                        "premium-activation",
+                    ],
+                    "*showkeys-ev": [
+                        "show-keys-ev",
+                        "showkeys-ev",
+                        "keys-ev",
+                        "key-ev",
+                        "premium-keys-ev",
+                        "premiumkey-ev",
+                        "premium-keys-list-ev",
+                    ],
                 }
                 available_tags = {}
                 for command, tags in command_tags.items():
@@ -348,6 +407,9 @@ if __name__ == "__main__":
         ctx.typing()
         async with ctx.typing():
             user_id = str(ctx.author.id)
+            key = key.replace(" ", "")
+            key = key.replace("|", "")
+            key = f"||{key}||"
 
             if user_id in activated_users:
                 message = "You've already activated your premium access! 👑"
@@ -400,6 +462,18 @@ if __name__ == "__main__":
                     await ctx.reply(
                         "I can't send you a DM. Please check your DM settings."
                     )
+            else:
+                await ctx.reply("You are not authorized to see the activation keys.")
+
+    @bot.command(name="showkeys-ev")
+    async def show_keys(ctx):
+        ctx.typing()
+        async with ctx.typing():
+            if ctx.author.id == ALLOWED_USER:
+                keys_str = "\n".join(
+                    [f"{key}: {status}" for key, status in activation_keys.items()]
+                )
+                await ctx.reply(f"Here are your activation keys:\n\n{keys_str}")
             else:
                 await ctx.reply("You are not authorized to see the activation keys.")
 
@@ -762,5 +836,42 @@ if __name__ == "__main__":
                 await ctx.reply(embed=embed_sum, view=EmbedButtonsVIP())
             else:
                 await ctx.reply(embed=embed_sum)
+
+    @bot.command(name="securekeys")
+    async def securekeys(ctx):
+        await ctx.reply(f"Here's your cryptographically safe key: {generate_key()}")
+
+    @bot.command(name="bye")
+    async def bye(ctx):
+        user_id = str(ctx.author.id)
+        timerList = list(range(1, 11))
+        ctx.typing()
+        async with ctx.typing():
+            await ctx.reply("Please confirm by typing `y` or `n` in chat.")
+
+            def check(m):
+                return m.author == ctx.author and m.content.lower() in ["y", "n"]
+
+            try:
+                confirmation = await bot.wait_for("message", check=check, timeout=30)
+                if confirmation.content.lower() == "y":
+                    for seconds_left in reversed(timerList):
+                        if seconds_left == 1:
+                            await ctx.reply(
+                                f"Killing Terminal in {seconds_left} seconds!"
+                            )
+                        else:
+                            await ctx.reply(
+                                f"Killing Terminal in {seconds_left} second!"
+                            )
+                        await asyncio.sleep(0.8)
+                    await ctx.reply("Bot turned off, should be offline shortly.")
+                    await bot.close()
+                else:
+                    await ctx.reply(
+                        f"Admin with user ID {user_id} has cancelled the action."
+                    )
+            except asyncio.TimeoutError:
+                await ctx.reply("Confirmation timed out. Action cancelled.")
 
     bot.run(os.getenv("TOKEN"))
