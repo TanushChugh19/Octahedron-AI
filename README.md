@@ -73,12 +73,14 @@ We welcome contributions! Follow these steps:**
 - Make changes, test them, and commit updates.
 - Submit a pull request explaining your improvements.
 
-**🐛 Known Bugs/Flaws (Status — Patched: ✅ | Pending Fix: ❌)**  
-- ❌ `describe` command is functional but provides inaccurate image descriptions  
-- ❌ `imagegen` and `rag` commands are not implemented yet  
-- ✅ Uses Python's `random` module for key generation — not cryptographically secure (Patched) | Fix: Using `secrets` module — please download the latest ```app.py``` from source, not from releases.  
-- ❌ No database backend implemented — currently using in-memory or file-based storage  
-- ✅ In v0.0-alpha.1, `zones` command caused the bot to hang on slow/unresponsive APIs (Patched) | Fix: Added timeout to API requests — please download the latest ```app.py``` from source, not from releases.  
+**🐛 Known Bugs/Flaws (Status — Patched: ✅ | Pending Fix: ❌ | Patched changes are in latest release: `v0.1-alpha.2`)**  
+- ❌ `describe` command is functional but provides inaccurate image descriptions.  
+- ❌ `imagegen` and `rag` commands are not implemented yet.
+- ❌ No database backend implemented — currently using in-memory or file-based storage.  
+- ✅ In `v0.0-alpha.1 Python's` `random` module for key generation — not cryptographically secure.
+- ✅ In `v0.0-alpha.1` `zones` command caused the bot to hang on slow/unresponsive APIs.
+- ✅ In `v0.0-alpha.1` `describe` command triggers `KeyError` sometimes.
+- ✅ In `v0.0-alpha.1` `zones` command API call link had double quotation for `API_KEY` in f string with double quotes.  
 
 **📜By contributing, you agree to follow the MPL-2.0 License, ensuring all modified files remain open-source. This project is licensed under MPL-2.0, meaning:**  
 - You must credit the original author.
