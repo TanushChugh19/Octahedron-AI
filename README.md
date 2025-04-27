@@ -3,7 +3,7 @@
 Octahedron AI (by Octahedron Tech) remembers, so you don’t have to! With **smart recall**, **deep insights**, and **effortless conversation**, it keeps knowledge at your fingertips. Whether you're brainstorming, researching, or solving problems — Octahedron AI is your ultimate AI companion! 🤖💡  
 
 ## 💵 Donate/Support me  
-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O71E53A8)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O71E53A8)  
 
 ## 😎 Octahedron AI is primarily open-source but includes certain parts that may remain closed-source due to security, financial, or proprietary reasons. Here’s a breakdown ⛓️‍💥  
 ### Open-Source Components  
